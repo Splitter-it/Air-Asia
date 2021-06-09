@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background: #001821;
     color: #fff;
     font-size: 14px;
@@ -35,6 +36,9 @@ h1 h2 h3 h4 h5 h6 {
     height: 120px;
     position: relative;
     margin-bottom: 90px;
+}
+.header__container {
+    position: relative;
 }
 .logo {
     display: block;
@@ -87,21 +91,15 @@ h1 h2 h3 h4 h5 h6 {
     text-decoration: underline;
 }
 .hello {
+    margin-bottom: 200px;
     
 }
-
-.hello__container {
-    width: 520px;
-    margin-left: 373px;
-    margin-bottom: 263px;
-    
-}
-
 .hello__title {
     font-size: 73px;
     font-weight: bold;
     line-height: 1.1;
     margin-bottom: 44px;
+    max-width: 517px;
 }
 .hello__text {
     font-size: 18px;
@@ -113,10 +111,18 @@ h1 h2 h3 h4 h5 h6 {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 35px;
+    display: inline-block;
 }
 .button:hover {
     background: #F5170E;
     box-shadow: 0 0 23px 0 rgba(245, 23, 14, 0.35);
+}
+.button_type_primary {
+    background: #F5170E;
+}
+.button--light:hover {
+    background: #F5170E;
+    color: #fff;
 }
 .offers {
     margin-bottom: 117px;
@@ -177,13 +183,15 @@ h1 h2 h3 h4 h5 h6 {
 .button--light {
     background: #fff;
     color: #F5170E;
-}
-.button--light:hover {
-    background: #fff;
     border: 1px solid #F5170E;
-    border-radius: 35px;
 }
-.news_title {
+.news {
+    margin-bottom: 152px;
+}
+.news__container {
+    max-width: 1162px;
+}
+.title {
     font-size: 36px;
 }
 .news__item {
@@ -193,6 +201,7 @@ h1 h2 h3 h4 h5 h6 {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    margin-right: 22px;
 }
 .news__img {
     display: block;
@@ -222,7 +231,6 @@ h1 h2 h3 h4 h5 h6 {
 }
 .pagination {
     text-align: center;
-    margin-bottom: 152px;
 }
 .pagination__display,.pagination__list {
     display: inline-block;
@@ -250,19 +258,41 @@ h1 h2 h3 h4 h5 h6 {
     font-weight: bold;
     line-height: 32px;
 }
-.about:before {
+.about__container {
+    position: relative;
+    text-align: right;
+}
+.about__container:before {
     content: "";
     display: block;
     width: 490px;
     height: 505px;
     background: center center / cover no-repeat;
+    background-image: url(./img/gates.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
-.about__deck {
+.about__content {
     padding: 80px 98px;
+    background-image: url(./img/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 785px;
+    color: black;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    margin-top: 135px;
+}
+.about {
+    margin-bottom: 35px;
 }
 .footer {
     height: 146px;
     position: relative;
+    margin-top: 165px;
 }
 .footer__container {
     position: relative;
